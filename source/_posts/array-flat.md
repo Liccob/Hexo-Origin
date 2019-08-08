@@ -15,4 +15,4 @@ Array.prototype.flat= function() {
 
 ```
 
-在原型
+在原型上修改 无限深度递归数组 使其扁平化
