@@ -19,5 +19,6 @@ function _new (){
 	return typeof res == 'object' ? res : obj;
 }
 ```
+注意原型链的关系
 
 
