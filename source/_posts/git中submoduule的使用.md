@@ -13,4 +13,4 @@ tags:
 ```
 每个clone下来外层库的人 首先需要git submodule init进行子库的初始化 之后需要再进行git submodule update来将子库clone至本地代码库 多个子库或者嵌套子库的话加上--recursive  
 之后在子库中修改东西时 需要在子库进行提交 然后cd出外层提交外层的代码 如果想在外层更新子库的代码就是git submodule 在子库的文件夹内的话就直接git pull即可  
-
+[参考指令链接](http://easior.is-programmer.com/posts/42541.html) 
