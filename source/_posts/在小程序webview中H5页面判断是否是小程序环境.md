@@ -6,7 +6,7 @@ tags:
 
 在实际业务代码中，我经常会和小程序来做交互，查阅了小程序开发文档，提供的方法总是会有各种奇怪的bug，ios和安卓总会有奇奇怪怪的场景bug，总结了一个函数
 
-```
+```javascript
 function checkMiniProgram(){
     var miniProgram= false;
     //安卓可以用UA

@@ -11,7 +11,7 @@ tags:
 
 
 
-```
+```css
 <span id="demo">test</span>
 
 #demo::before{

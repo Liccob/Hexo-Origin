@@ -10,7 +10,7 @@ tags:
 3.将构造函数内部this都指向新生成得这个对象  
 4.返回 如果构造函数返回的是一个对象那么就返回构造器返回的对象 如果不是就把新创建得对象给返回
 
-```
+```javascript
 function _new (){
 	let obj = Object.create();
 	let constructor = Array.prototype.shift.call(arguments);

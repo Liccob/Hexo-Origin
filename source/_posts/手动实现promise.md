@@ -6,7 +6,7 @@ tags:
 
 看网上教程手动实现
 
-```
+```javascript
 function Promise(executor){
 
 	var self = this;

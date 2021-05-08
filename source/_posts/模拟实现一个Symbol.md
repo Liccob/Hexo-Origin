@@ -5,7 +5,7 @@ tags:
 ---
 
 昨天被问到一个问题，手动实现一个Symbol满足
-```
+```javascript
 const t = symbol('t');
 const t2 = symbol('t');
 t == t2 //false
@@ -32,7 +32,7 @@ Else, var descString be ToString(description).
 
 对于我来说，首先如何声明出这个Symbol函数就是一个问题，由于其是声明到全局的一个方法，并且有可能会遇到需要存储一些变量的情况，那么我们可以使用立即执行函数来隔离作用域并且绑定至全局  
 
-```
+```javascript
 (function(){
 	const root = this;
 	const SymbolPolyfill = function Symbol(description){
@@ -46,7 +46,7 @@ Else, var descString be ToString(description).
 问题就到了new这个运算符 做了什么 我们需要在SymbolPolyfill中做什么样的处理才能使其抛出异常呢？ 或者说 直接调用这个函数 和 用new调用这个函数 有啥区别之处，我们在区别的地方做一层校验抛出异常即可  
 
 从之前的一篇文章，我们可以知道new运算符在使用时实际构造函数中的this是new出来的实例 而直接调用这个构造函数时 this是window 所以我们首先可以添加一行代码 来判断是否是new调用的
-```
+```javascript
 (function(){
 	const root = this;
 	const SymbolPolyfill = function Symbol(description){
@@ -57,7 +57,7 @@ Else, var descString be ToString(description).
 ```
 如果传进来的desc不是字符串那么就调用其tostring方法 将值赋给description
 
-```
+```javascript
 (function(){
 	const root = this;
 	const SymbolPolyfill = function Symbol(description){
@@ -69,7 +69,7 @@ Else, var descString be ToString(description).
 ```
 为了实现相同desc不相等 我们可以返回一个对象 两个对象的存储地址肯定是不相等的
 
-```
+```javascript
 (function(){
 	const root = this;
 	const SymbolPolyfill = function Symbol(description){
@@ -92,7 +92,7 @@ Else, var descString be ToString(description).
 
 接下来我们实现for的功能，for就需要用到一个对象存储已经声明过的数据
 
-```
+```javascript
 (function(){
 	const root = this;
 	const SymbolPolyfill = function Symbol(description){

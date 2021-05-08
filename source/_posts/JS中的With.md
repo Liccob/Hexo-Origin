@@ -11,7 +11,7 @@ JS中的With
 JS中with会建立一个临时的作用于，此作用域中所有的变量在判断其值时都会先在with的对象上查找该属性若有则引用，若无则一层层向外查找。  
 
 下面列出几段代码来说明with得使用方法
-```
+```javascript
 var qs = location.search.substring(1);
 var hostName = location.hostname;
 var url = location.href;
@@ -60,8 +60,7 @@ funcWith();
 
 下面列几个使用with会出现理解问题的例子：
 
-```
-
+```javascript
 var o={
   x:10,
   foo:function(){
