@@ -1,7 +1,10 @@
 ---
 title: array.flat()
 date: 2019-08-08 14:43:49
-tags:
+tags: 
+- Array
+categories: 
+- JS基础
 ---
 
 

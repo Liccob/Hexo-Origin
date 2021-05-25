@@ -1,7 +1,10 @@
 ---
 title: 手写一个new
 date: 2019-08-16 15:19:05
-tags:
+tags: 
+- new运算符
+categories: 
+- JS基础
 ---
 
 在写得时候 我们需要首先梳理清楚new这个关键字做了什么   

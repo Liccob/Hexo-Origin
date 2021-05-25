@@ -1,7 +1,10 @@
 ---
 title: 箭头函数中的this
 date: 2019-10-18 19:49:05
-tags:
+tags: 
+- this
+categories: 
+- JS基础
 ---
 
 箭头函数中的this一般会保持为在声明这个箭头函数时的this  

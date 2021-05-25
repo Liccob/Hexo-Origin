@@ -1,7 +1,10 @@
 ---
 title: 手动实现promise
 date: 2018-09-06 10:29:39
-tags:
+tags: 
+- Promise
+categories: 
+- JS基础
 ---
 
 看网上教程手动实现

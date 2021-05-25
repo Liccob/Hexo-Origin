@@ -1,7 +1,10 @@
 ---
 title: git中submoduule的使用
 date: 2019-08-22 20:53:36
-tags:
+tags: 
+- Git
+categories: 
+- Git
 ---
 最近公司两个项目需要融合 所以大家维护了一个公共库 又不想使用npm每次都发包 所以就用内嵌git库的方式来维护  
 内嵌git库主要使用的就是 submodule的方式 就是git库内嵌git库  

@@ -1,7 +1,10 @@
 ---
 title: 模拟实现一个Symbol
 date: 2019-08-29 21:03:05
-tags:
+tags: 
+- Symbol
+categories: 
+- JS基础
 ---
 
 昨天被问到一个问题，手动实现一个Symbol满足
